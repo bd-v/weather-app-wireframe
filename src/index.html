@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Wireframe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="browser icon" href="../assets/weather-icons/wi-day-cloudy.svg" type="../assets/weather-icons/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Weather Icons -->
+    <link rel="stylesheet" href="./css/weather-icons.min.css"/>
+  </head>
+  <body onload="onLoad()">
+    <div class="screen bg-sunny-day">
+      <!-- Status Bar -->
+      <div class="status-bar">
+        <div id="time"></div>
+        <div class="container">
+          <ul>
+            <li><i class="fa-solid fa-signal"></i></li>
+            <li><i class="fa-solid fa-wifi"></i></li>
+            <li><i class="fa-solid fa-battery-three-quarters"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Location Bar-->
+      <div class="location-bar">
+        <div class="container">
+          <div id="location-name"></div>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div id="date"></div>
+      </div>
+
+      <!-- Present Forecast -->
+      <div class="forecast-present sunny">
+        <div class="forecast-present-temperature">
+          <div class="temperature-current">
+            <h1 id="temperature-current">67<sup>&deg;</sup></h1>
+          </div>
+          <div class="container">
+            <div class="forecast-present-category">SUNNY</div>
+            <div class="temperature-range">69<sup>&deg;</sup>&sol;42<sup>&deg;</sup></div>
+          </div>
+        </div>
+        <div class="forecast-present-icon">
+          <i class="wi wi-day-sunny"></i>
+        </div>
+      </div>
+
+      <!-- Future Forecast -->
+      <div class="forecast-future">
+        <div class="forecast-future-container">
+          <div class="forecast-future-group">
+            <div class="container">
+              <i class="wi wi-day-cloudy"></i>
+            <div class="day">Sunday</div>
+            </div>
+            <div class="temperature-range">79<sup>&deg;</sup>&sol;52<sup>&deg;</sup></div>
+          </div>
+          <div class="forecast-future-group">
+            <div class="container">
+              <i class="wi wi-cloudy"></i>
+            <div class="day">Monday</div>
+            </div>
+            <div class="temperature-range">81<sup>&deg;</sup>&sol;63<sup>&deg;</sup></div>
+          </div>
+          <div class="forecast-future-group">
+            <div class="container">
+              <i class="wi wi-rain"></i>
+              <div class="day">Tuesday</div>
+            </div>
+            <div class="temperature-range">73<sup>&deg;</sup>&sol;66<sup>&deg;</sup></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
