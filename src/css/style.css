@@ -80,7 +80,6 @@ body {
 }
 
 .forecast-present .forecast-present-temperature .temperature-current {
-  display: flex;
   font-size: 48px;
 }
 
